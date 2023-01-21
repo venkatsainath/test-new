@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- COde for dropd down start -->
+<div style="text-align:center" class="main-dropdown">
+
+  {{selectedC}}
+  <div class="dropdown">
+    <div>
+      <div *ngFor="let item of country" (click)="countrySelected(item)">
+        {{item}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- code for dropdown end -->
+<router-outlet></router-outlet>
